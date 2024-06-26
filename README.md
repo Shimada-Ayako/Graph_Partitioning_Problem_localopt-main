@@ -35,9 +35,9 @@ The graph partitioning problem is formulated as follows:
 
 To address this problem, the following operations are repeatedly performed to update the feasible solution:
 
-Let {$\textbf{X}$, $\textbf{Y}$} be the currently best feasible solution:
+Let \{ $\textbf{X}$, $\textbf{Y}$ \} be the currently best feasible solution:
 1. Randomly select variable $x$ $\in$ $\textbf{X}$ and $y$ $\in$ $\textbf{Y}$
-2. Update as follows: $\textbf{X}$ := $\textbf{X}$ $\cup$ {$y$} $\backslash$ {$x$}, $\textbf{Y}$ := $\textbf{Y}$ $\cup$ {$x$} $\backslash$ {$y$} 
+2. Update as follows: $\textbf{X}$ := $\textbf{X}$ $\cup$ \{$y$\} $\backslash$ \{$x$\}, $\textbf{Y}$ := $\textbf{Y}$ $\cup$ \{$x$\} $\backslash$ \{$y$\} 
 
 By repeating these steps, we search for a local optimum solution.
 
