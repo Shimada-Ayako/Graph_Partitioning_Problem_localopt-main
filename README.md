@@ -70,6 +70,37 @@ The ```-help```command line option will show more information about main program
 ```
 ./main --help
 ```
+# Example
+```
+% ./main ../../test/test_matrix20.csv -i 10                                                              
+initial solution: 53
+new_solution: 52
+new_solution: 51
+new_solution: 48
+new_solution: 47
+new_solution: 44
+solution: 44
+1 2 5 7 8 9 15 19 18 11
+10 12 13 14 16 0 6 3 17 4
+ 0.000000s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+```
+
+```
+% ./main ../../test/test_matrix20.csv -i 1000000 -t 10                                                       
+Maximum running time: 10
+initial solution: 53
+new_solution: 52
+new_solution: 47
+new_solution: 45
+new_solution: 43
+new_solution: 42
+new_solution: 41
+out of time
+solution: 41
+0 1 5 8 9 15 18 11 7 19
+10 12 14 16 17 6 2 3 13 4
+ 10.000000s wall, 5.840000s user + 4.140000s system = 9.980000s CPU (99.8%)
+```
 
 # License
 The source code is licensed MIT.
